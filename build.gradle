@@ -1,0 +1,15 @@
+apply plugin : 'java'
+apply plugin : 'application'
+
+repositories{
+	mavenCentral()
+}
+dependencies{
+		// https://mvnrepository.com/artifact/com.google.inject/guice
+	implementation 'com.google.inject:guice:7.0.0'
+
+}
+
+application {
+	mainClassName= 'com.home.main.GuiceMain'
+}
